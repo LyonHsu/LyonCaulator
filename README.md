@@ -137,8 +137,8 @@ layout/activity_main.xml
         recyclerView.layoutManager = gridLayoutManager
         recyclerView.adapter = testAdapter
     }
-    
-    4.四則運算邏輯
+   
+ 4.四則運算邏輯
     由於數學有先加減後乘除規則，所以這裡使用textView來記錄要計算的運算，而後經過遞迴來處理先加減後乘除的規則。注意這只是範例，所以沒有考慮硬體消耗問  題。 有興趣的可以玩一下！
     使用切割法，先將＋,-切割開來，如此將會剩下*,/ ，然後我們來處理*,/的運算再將結果回傳，如此將會只剩下＋,-的運算需要計算。
     Ex:
